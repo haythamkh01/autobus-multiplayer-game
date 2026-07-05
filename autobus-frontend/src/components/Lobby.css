@@ -1,0 +1,124 @@
+.lobby {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lobby-card {
+  width: 100%;
+  max-width: 420px;
+  background: #111827;
+  color: white;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.lobby-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.game-icon {
+  font-size: 44px;
+}
+
+.lobby-header h2 {
+  margin: 12px 0 6px;
+  font-size: 32px;
+}
+
+.lobby-header p {
+  color: #9ca3af;
+  margin: 0;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #d1d5db;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: 12px;
+  border: 1px solid #374151;
+  background: #1f2937;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #facc15;
+}
+
+.primary-btn,
+.secondary-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: #facc15;
+  color: #111827;
+}
+
+.secondary-btn {
+  background: #38bdf8;
+  color: #082f49;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #9ca3af;
+  margin: 24px 0;
+  font-size: 13px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #374151;
+}
+
+.room-code-box {
+  margin-top: 22px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #1f2937;
+  text-align: center;
+  border: 1px dashed #facc15;
+}
+
+.room-code-box span,
+.room-code-box small {
+  display: block;
+  color: #9ca3af;
+}
+
+.room-code-box strong {
+  display: block;
+  font-size: 36px;
+  letter-spacing: 4px;
+  margin: 6px 0;
+  color: #facc15;
+}
