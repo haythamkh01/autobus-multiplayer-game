@@ -64,7 +64,7 @@ function App() {
 
   function createClient(code, onConnected) {
     const client = new Client({
-      webSocketFactory: () => new SockJS("http://localhost:8080/ws"),
+      webSocketFactory: () => new SockJS("https://autobus-backend1.onrender.com/ws"),
       onConnect: () => {
         client.subscribe(`/topic/room/${code}`, (response) => {
           handleSocketMessage(JSON.parse(response.body));
@@ -110,7 +110,7 @@ function App() {
       return;
     }
 
-    const response = await fetch("http://localhost:8080/api/rooms", {
+    const response = await fetch("https://autobus-backend1.onrender.com/api/rooms", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
